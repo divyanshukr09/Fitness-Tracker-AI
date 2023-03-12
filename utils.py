@@ -8,7 +8,7 @@ def draw_rounded_rect(img, rect_start, rect_end, corner_width, box_color):
     x2, y2 = rect_end
     w = corner_width
 
-    # draw filled rectangles
+    # draw filled rectangles  
     cv2.rectangle(img, (x1 + w, y1), (x2 - w, y1 + w), box_color, -1)
     cv2.rectangle(img, (x1 + w, y2 - w), (x2 - w, y2), box_color, -1)
     cv2.rectangle(img, (x1, y1 + w), (x1 + w, y2 - w), box_color, -1)
